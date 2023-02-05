@@ -1,8 +1,9 @@
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 
-  max-width: 944px;
+  // max-width: 944px;
+  width: min-content;
   margin: 0 auto;
 
   &__card {
@@ -13,10 +14,10 @@
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 48px;
+    // margin-bottom: 48px;
   }
 
-  &__card:not(:nth-child(4n)) {
-    margin-right: 48px;
-  }
+  // &__card:not(:nth-child(4n)) {
+  //   margin-right: 48px;
+  // }
 }
