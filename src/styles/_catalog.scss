@@ -3,29 +3,25 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(1, $card-width);
   grid-template-rows: 1fr 1fr;
   gap: 48px;
   justify-content: start;
 
-  @media (max-width: 488px) {
-    grid-template-columns: repeat(1, 200px);
+  @include onTablet {
+    grid-template-columns: repeat(3, $card-width);
   }
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 200px);
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 200px);
+  @include onDesktop {
+    grid-template-columns: repeat(4, $card-width);
   }
 
   &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 300px;
+    width: $card-width;
+    height: $card-height;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
